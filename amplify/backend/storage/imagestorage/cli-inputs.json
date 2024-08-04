@@ -1,0 +1,14 @@
+{
+  "resourceName": "imagestorage",
+  "policyUUID": "930308be",
+  "bucketName": "amplifyapp754ee7c2db4c4b7e8bafba5bf98b46f7",
+  "storageAccess": "auth",
+  "guestAccess": [],
+  "authAccess": [
+    "CREATE_AND_UPDATE",
+    "READ",
+    "DELETE"
+  ],
+  "triggerFunction": "S3Trigger412a0c16",
+  "groupAccess": {}
+}
