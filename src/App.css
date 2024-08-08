@@ -1,38 +1,47 @@
-.App {
-  text-align: center;
+/* App.css */
+.card {
+  position: relative;
+  
+  margin: 1rem;
+  padding: 1rem;
+  width: 80%;
+  max-width: 400px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.card img {
+  max-width: 100%;
+  border-radius: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.card-title {
+  font-size: 1.5rem;
+  /* タイトルのサイズを大きく */
+  font-weight: bold;
+  /* 文字を太く */
+  color: #333;
+  /* 文字の色を濃く */
+  margin-bottom: 0.5rem;
+  background-color: #d32f2f;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.card-description {
+  margin-bottom: 1rem;
+  color: #666;
+  /* 内容の文字の色 */
 }
 
-.App-link {
-  color: #61dafb;
+.card button {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background-color: #f44336;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card button:hover {
+  background-color: #d32f2f;
 }

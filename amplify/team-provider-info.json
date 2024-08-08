@@ -1,15 +1,16 @@
+
 {
   "dev": {
     "awscloudformation": {
-      "AuthRoleName": "amplify-amplifyapp-dev-87609-authRole",
-      "UnauthRoleArn": "arn:aws:iam::010526284951:role/amplify-amplifyapp-dev-87609-unauthRole",
-      "AuthRoleArn": "arn:aws:iam::010526284951:role/amplify-amplifyapp-dev-87609-authRole",
+      "AuthRoleName": "${REACT_APP_AUTH_ROLE_NAME}",
+      "UnauthRoleArn": "${REACT_APP_UNAUTH_ROLE_ARN}",
+      "AuthRoleArn": "${REACT_APP_AUTH_ROLE_ARN}",
       "Region": "ap-northeast-3",
-      "DeploymentBucketName": "amplify-amplifyapp-dev-87609-deployment",
+      "DeploymentBucketName": "${REACT_APP_DEPLOYMENT_BUCKET_NAME}",
       "UnauthRoleName": "amplify-amplifyapp-dev-87609-unauthRole",
-      "StackName": "amplify-amplifyapp-dev-87609",
-      "StackId": "arn:aws:cloudformation:ap-northeast-3:010526284951:stack/amplify-amplifyapp-dev-87609/96981640-5075-11ef-99df-0e0fb7f827a5",
-      "AmplifyAppId": "d1lm0n00108y55"
+      "StackName": "${REACT_APP_STACK_NAME}",
+      "StackId": "${REACT_APP_STACK_ID}",
+      "AmplifyAppId": "${REACT_APP_AMPLIFY_APP_ID}"
     },
     "categories": {
       "auth": {
@@ -20,8 +21,8 @@
       },
       "function": {
         "S3Trigger412a0c16": {
-          "deploymentBucketName": "amplify-amplifyapp-dev-87609-deployment",
-          "s3Key": "amplify-builds/S3Trigger412a0c16-546738635a515755562b-build.zip"
+          "deploymentBucketName": "${REACT_APP_DEPLOYMENT_BUCKET_NAME}",
+          "s3Key": "${REACT_APP_S3_KEY}"
         }
       },
       "storage": {

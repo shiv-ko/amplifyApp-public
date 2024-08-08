@@ -107,31 +107,25 @@ const App = ({ signOut }) => {
         </Flex>
       </View>
       <Heading level={2}>Current Notes</Heading>
-      <View margin="3rem 0">
+      <Flex direction="row" wrap="wrap" justifyContent="center">
         {notes.map((note) => (
-          <Flex
-            key={note.id || note.name}
-            direction="row"
-            justifyContent="center"
-            alignItems="center"
-          >
-            <Text as="strong" fontWeight={700}>
+          <View key={note.id || note.name} className="card">
+            <Text as="strong" fontWeight={700}  >
               {note.name}
             </Text>
-            <Text as="span">{note.description}</Text>
+            <Text as="div" className="card-description">{note.description}</Text>
             {note.image && (
               <Image
                 src={note.image}
-                alt={`visual aid for ${notes.name}`}
-                style={{ width: 400 }}
+                alt={`visual aid for ${note.name}`}
               />
             )}
-            <Button variation="link" onClick={() => deleteNote(note)}>
+            <Button onClick={() => deleteNote(note)} className="delete-button">
               Delete note
             </Button>
-          </Flex>
+          </View>
         ))}
-      </View>
+      </Flex>
       <Button onClick={signOut}>Sign Out</Button>
     </View>
   );
