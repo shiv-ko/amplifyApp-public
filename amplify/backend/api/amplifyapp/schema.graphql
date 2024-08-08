@@ -21,7 +21,7 @@ type Comment @model {
   post: Post @belongsTo
   content: String!
 }
-# tutorialのためのnote schema
+#la tutorialのためのnote schema
 type Note @model @auth(rules: [{ allow: public }]) {
   id: ID!
   name: String!
